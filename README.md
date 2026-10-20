@@ -1,2 +1,252 @@
 # Sugar-Sisters
 The official Sugar Sisters website
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sugar Sisters</title>
+
+  <style>
+    /* OUR COLORS: We can change these anytime! */
+    :root {
+      --pink: #f7a8c4;
+      --purple: #8b6bd6;
+      --cream: #fffaf5;
+      --dark: #352b40;
+      --mint: #bcebd7;
+    }
+
+    /* THE WHOLE PAGE */
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+    }
+
+    /* TOP NAVIGATION BAR */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: white;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      color: var(--purple);
+      font-size: 1.6rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--purple);
+    }
+
+    /* BIG WELCOME SECTION */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(
+        135deg,
+        var(--pink),
+        var(--mint)
+      );
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 7vw, 4.5rem);
+      margin: 0 0 20px;
+    }
+
+    .hero p {
+      max-width: 580px;
+      margin: 0 auto 30px;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 26px;
+      background: var(--purple);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: transform 0.2s;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+    }
+
+    /* CONTENT SECTIONS */
+    section.content {
+      max-width: 900px;
+      margin: auto;
+      padding: 65px 24px;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 2rem;
+      color: var(--purple);
+    }
+
+    .content p {
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(210px, 1fr)
+      );
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      padding: 28px 20px;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 5px 20px #352b4010;
+    }
+
+    .card h3 {
+      color: var(--purple);
+    }
+
+    .emoji {
+      font-size: 2.5rem;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 30px 20px;
+      text-align: center;
+      background: var(--dark);
+      color: white;
+    }
+
+    footer p {
+      margin: 6px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a class="logo" href="#">Sugar Sisters ♡</a>
+
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#what-we-do">What We Do</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to Sugar Sisters!</h1>
+
+      <p>
+        A little sweetness, a lot of heart, and big ideas
+        waiting to bloom. Welcome to our corner of the world!
+      </p>
+
+      <a class="button" href="#about">
+        Get to Know Us ✨
+      </a>
+    </section>
+
+    <section class="content" id="about">
+      <h2>Who We Are 💗</h2>
+
+      <p>
+        We're Sugar Sisters! This is our space to share
+        our story, our ideas, and the things that make
+        our organization special. There's so much more
+        to come, and we're glad you're here.
+      </p>
+    </section>
+
+    <section class="content" id="what-we-do">
+      <h2>Our Little Corner of the World 🌷</h2>
+
+      <p>
+        Every great idea starts somewhere. Here's where
+        we'll share what we do, what we care about,
+        and what we're working on together.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">💡</div>
+          <h3>Our Ideas</h3>
+          <p>Creative thinking and exciting new possibilities.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">💗</div>
+          <h3>Our Community</h3>
+          <p>Bringing people together around what matters.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">🌱</div>
+          <h3>Our Future</h3>
+          <p>Growing our ideas one step at a time.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content" id="contact">
+      <h2>Say Hello! 💌</h2>
+
+      <p>
+        Have something to share? We'd love to hear from you.
+        Our contact details will go here once we decide
+        how people should reach us.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Sugar Sisters ♡</strong></p>
+    <p>A little sweetness. A lot of possibility.</p>
+  </footer>
+
+</body>
+</html>
